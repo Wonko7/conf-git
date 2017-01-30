@@ -20,13 +20,13 @@
 	dw   = diff --word-diff
 	dr   = diff --raw
 	ds   = diff --stat
-	l    = log
-	lp   = log -p
-	lw   = log -p --word-diff
-	ls   = log --stat
-	lr   = log --raw
-	lg   = log --graph
-	lo   = log --pretty=oneline
+	l    = log --decorate=short
+	lp   = log -p --decorate=short
+	lw   = log -p --word-diff --decorate=short
+	ls   = log --stat --decorate=short
+	lr   = log --raw --decorate=short
+	lg   = log --graph --decorate=short
+	lo   = log --pretty=oneline --decorate=short
 	f    = fetch
 	ph   = push
 	pl   = pull
