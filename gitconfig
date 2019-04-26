@@ -1,6 +1,7 @@
 [user]
-	name = William
-	email = William@undefined.re
+	name        = William
+        email       = william@undefined.re
+	signingkey  = william@undefined.re
 
 [color]
 	ui = true
@@ -20,7 +21,7 @@
 	dw   = diff --word-diff
 	dr   = diff --raw
 	ds   = diff --stat
-	l    = log --decorate=short
+	l    = log --decorate=short --graph
 	lp   = log -p --decorate=short
 	lw   = log -p --word-diff --decorate=short
 	ls   = log --stat --decorate=short
@@ -40,8 +41,20 @@
 	t    = tag
 	ui   = update-index
 
+[merge]
+        tool   = vimdiff
+
+[mergetool]
+        prompt = true
+
+[mergetool "vimdiff"]
+        cmd    = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
+
 [rerere]
 	enabled = 1
 
 [diff]
 	renamelimit = 5000
+
+[commit]
+	gpgsign = true
