@@ -18,16 +18,15 @@
 	cob  = checkout -b
 	cot  = checkout --track
 	d    = diff
-	dw   = diff --word-diff
+	dw   = diff --word-diff -w
 	dr   = diff --raw
 	ds   = diff --stat
-	l    = log --decorate=short --graph
-	lp   = log -p --decorate=short
-	lw   = log -p --word-diff --decorate=short
-	ls   = log --stat --decorate=short
-	lr   = log --raw --decorate=short
-	lg   = log --graph --decorate=short
-	lo   = log --pretty=oneline --decorate=short
+	l    = log --graph --decorate=short
+	lp   = log --graph -p --decorate=short
+	lw   = log --graph -p --word-diff -w --decorate=short
+	ls   = log --graph --stat --decorate=short
+	lr   = log --graph --raw --decorate=short
+	lo   = log --graph --pretty=oneline --decorate=short
 	f    = fetch
 	ph   = push
 	pl   = pull
