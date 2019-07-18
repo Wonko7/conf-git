@@ -14,6 +14,7 @@
 	cm   = commit -m
 	cim  = commit -a -m
 	cam  = commit -a -m
+	aip  = add -ip
 	b    = branch
 	ba   = branch -a
 	bt   = branch --track
