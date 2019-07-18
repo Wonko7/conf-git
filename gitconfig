@@ -8,9 +8,12 @@
 
 [alias]
 	st   = status -s
+	c    = commit
 	ci   = commit -a
+	ca   = commit -a
 	cm   = commit -m
 	cim  = commit -a -m
+	cam  = commit -a -m
 	b    = branch
 	ba   = branch -a
 	bt   = branch --track
