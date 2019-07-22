@@ -34,10 +34,10 @@
 	f    = fetch
 	ph   = push
 	pl   = pull
-#	r    = remote
+	r    = remote
 	rs   = remote show
 	ra   = remote add
-	rd   = remote del
+        s    = submodule
 	lsf  = ls-files
 	m    = merge
 	cl   = clean -fdx
